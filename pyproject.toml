@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "uv-demo-project"
+name = "demo"
 version = "0.2"
 description = "This is a demo package"
 readme = "README.md"
@@ -20,6 +20,3 @@ authors = [
 dev-dependencies = [
     "pytest>=8.3.4",
 ]
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/demo"]
