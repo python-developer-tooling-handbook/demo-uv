@@ -20,3 +20,6 @@ authors = [
 dev-dependencies = [
     "pytest>=8.3.4",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/demo"]
