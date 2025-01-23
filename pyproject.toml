@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "uv-demo-project"
+version = "0.2"
+description = "This is a demo package"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+dependencies = [
+    "cowsay"
+]
+authors = [
+    {name = "Tim", email = "tim@example.com"}
+] 
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.4",
+]
