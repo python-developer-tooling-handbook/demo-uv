@@ -1,8 +1,10 @@
 # Example Python Package
 
+This is a companion example for the [uv](https://pydevtools.com/handbook/reference/uv/) reference page on the [Python Developer Tooling Handbook](https://pydevtools.com).
+
 This is an example project demonstrating how to build a Python package (wheel or sdist) using [uv](https://docs.astral.sh/uv/) with `pyproject.toml` for configuration.
 
-> [!INFO]
+> [!NOTE]
 > uv does not currently have a build _backend_ and defaults to using [hatchling](https://hatch.pypa.io/latest/why/#build-backend) for building packages. For most users, this will be sufficient and invisible.
 
 ## Commands
@@ -66,6 +68,5 @@ uv publish --index testpypi
 
 The built distributions will be placed in the `dist/` directory by default.
 
-{{< callout type="info" >}}
-Remember to [set up authentication](https://docs.astral.sh/uv/guides/publish/) before publishing. Use `UV_PUBLISH_TOKEN` environment variable or the `--token` flag to provide your PyPI API token.
-{{< /callout >}}
+> [!NOTE]
+> Remember to [set up authentication](https://docs.astral.sh/uv/guides/publish/) before publishing. Use `UV_PUBLISH_TOKEN` environment variable or the `--token` flag to provide your PyPI API token.
